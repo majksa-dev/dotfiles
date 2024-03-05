@@ -116,7 +116,7 @@ if [ -x "$(command -v colorls)" ]; then
 fi
 
 function cd {
-    builtin cd "$@" && ls
+    builtin z "$@" && ls
 }
 
 [[ ! -f ~/.zshrc.loc ]] || source ~/.zshrc.loc
