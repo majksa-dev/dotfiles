@@ -119,3 +119,5 @@ function cd {
     builtin cd "$@" && ls
 }
 
+[[ ! -f ~/.zshrc.loc ]] || source ~/.zshrc.loc
+
